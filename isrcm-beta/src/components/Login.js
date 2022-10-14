@@ -31,10 +31,25 @@ export default function Login(){
                     <div className="d-grid">
                     <Button variant="link" size="lg">Crear usuario</Button>
                     </div>
-                    
-                
                 </Form>
             </Card>
+            <section class="">
+                <footer class="text-center text-white">
+                    <div class="container p-4 pb-0">
+                    <section class="">
+                        <p class="d-flex justify-content-center align-items-center">
+                        <span class="me-3"></span>
+                        <button type="button" class="btn btn-outline-light btn-rounded">
+                            acerca de nosotros
+                        </button>
+                        </p>
+                    </section>
+                    </div>
+                    <div class="text-center p-3">
+                    © 2022 Copyright: I.S.C.R.M.
+                    </div>
+                </footer>
+            </section>
         </Container>
     );
 }
