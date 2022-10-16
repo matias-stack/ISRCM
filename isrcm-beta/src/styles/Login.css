@@ -1,7 +1,6 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
 #main-container{
-
     place-items: center center;
 }
 #card-login{
