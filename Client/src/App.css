@@ -54,8 +54,8 @@ body{
 .SidebarList{
   height: auto;
   padding: 5%;
-
 }
+
 .SidebarList .row{
   height: 100%;
   height: 50px;
@@ -70,7 +70,6 @@ body{
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  
 }
 
 .SidebarList .row:hover{
@@ -95,10 +94,15 @@ body{
   background-color: #01C681;
   position: static;
   margin: 20px auto;
-  
-
 }
+
 /* Selector de cursos  */ 
+.Basic{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
 .BasicSelect{
   background-color: #D9D9D9;
   border: 3px solid  black;
@@ -107,9 +111,7 @@ body{
 
 /* boton*/ 
 .ActiButton{
-  color:  #D9D9D9;
-  
-  
+  color:  #D9D9D9;  
 }
 
 .ActiText{
@@ -120,57 +122,89 @@ body{
 }
 
 /* Añadir empleados selector*/ 
+.Añadir{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
 .ChekAñadir{
   width: 100%;
   box-sizing: border-box;
   margin:0px auto; 
   padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center; 
 }
 
 .AñadirEmpleado{
+  justify-content: center;
+  align-content: center;  
+}
+
+.AñadirList{
+  width: 100%;
   background-color: #D9D9D9;
   border: 3px solid  black;
   
 }
 
-.AñadirList{
-  width: 100%;
-  
+.BAñadir{
+  width: 99.3%;
+  height:  65px;
+  background-color: #D9D9D9;
+  border: 3px solid  black;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
 }
+
+.BBAñadir{
+  border: 3px solid  white;
+  border-radius: 10px ;
+}
+
 /* Eliminar empleados selector*/ 
+.Eliminar{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
 .CheckEliminar{
   width: 100%;
   box-sizing: border-box;
   margin:0px auto; 
   padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-  
+ 
 }
 
 .EliminarEmpleado{
-  background-color: #D9D9D9;
-  border: 3px solid  black;
-  width: 100%;
+  justify-content: center;
+  align-content: center; 
+  padding: 20px;
+  
 }
 
 .EliminarList{
-  width: 100%;
-  
+  width:  100%;
+  background-color: #D9D9D9;
+  border: 3px solid  black;
 }
 
 .Divider{
   color: aqua;
 }
 
+/*Contador de los cursos*/
+.Contador{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
 
 .CountCurso{
   background-color: #D9D9D9;
   border: 3px solid  black;
+  width: 80%;  
 }
 
 /*Boton crear grupó y limpiar todo*/
@@ -178,12 +212,45 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px;
+}
+
+.Bcreargrupo{
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.BLimpiar{
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll{
+  height: 400px;
+  background: #f1f1f1; 
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.scrolla{
+  
+  background: #f1f1f1; 
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 
+.borde{
+  border-bottom: 1px solid;
+}
+
 .ViewEmp {
   height: 45vw;
-  width: 850px;
+  width: 950px;
   border-radius: 10px ;
   display: block;
   background-color: #01C681;
@@ -193,7 +260,7 @@ body{
 
 .ViewGroup {
   height: 45vw;
-  width: 850px;
+  width: 950px;
   border-radius: 10px ;
   display: block;
   background-color: #01C681;
@@ -231,4 +298,31 @@ body{
   background-color: green;
 }
 
+.ViewBasic{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  
+}
 
+.ViewBasicSelect{
+  background-color: #D9D9D9;
+  
+  
+}
+
+.ViewSide{
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.scrollView{
+  height: 600px;
+  width: 759px;
+  background: #f1f1f1; 
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border: 3px solid  black;
+}
