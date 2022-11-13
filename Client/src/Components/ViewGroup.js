@@ -5,6 +5,7 @@ import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
 import Button from '@mui/material/Button';
+import Divider from '@mui/material/Divider';
 
 
 class  ViewGroup extends Component{
@@ -43,58 +44,69 @@ class  ViewGroup extends Component{
         }
     render(){
     return (
+        
         <div className="Basic">
             <div className='ViewGroup'>
-                <h5>Ver Grupo</h5>
-                <Container>
-                    <Form id='List_Group'>
-                        { 
-                            this.state.grupos.map(grupo=> {
-                                let  nombre_curso = fetch(`http://localhost:9000/api/grupo/${grupo.curso}`).then(res => res.json()).then(data => {return data})
-                                console.log(nombre_curso)
-                                return(
-                                    <div class="row">
-                                    <div class="col">
-                                    <h4>Grupo {grupo.nombre_grupo} - {grupo.empleados.length} cursantes</h4>
-                                    <h4>Curso: {nombre_curso['Nombre Curso']}</h4>
-                                    </div>
-                                    <div class="col" id='List-button'>
-                                        {/* Boton borrar */}
-                                        <div className="BButton">
-                                        <div className="ActiText">
-                                            <Button onClick ={() =>this.eliminar_grupo(grupo._id)} variant="contained" color='error' startIcon={<DeleteIcon />} id='BBorrar' >
-                                                Borrar
-                                            </Button>
-                                        </div>
-                                        </div>
-                                        {/* Boton editar */}
-                                        <div className="EButton">
-                                            <div className="ActiText">
-                                                <Button variant="contained" startIcon={<EditIcon />} id='BEditar'>
-                                                    Editar
-                                                </Button>
+                <div className="Añadir"> 
+                    <div className="AñadirEmpleado">  
+                        <br></br>
+                        <br></br>
+                        <h5>Ver Grupo</h5>
+                        <Container>
+                            <Form id='List_Group'>
+                                { 
+                                    this.state.grupos.map(grupo=> {
+                                        let  nombre_curso = fetch(`http://localhost:9000/api/grupo/${grupo.curso}`).then(res => res.json()).then(data => {return data})
+                                        console.log(nombre_curso)
+                                        return(
+                                        <div class="row">
+                                            <div class="col">
+                                                <h5>Nombre Grupo: {grupo.nombre_grupo}</h5>
+                                                <h5>Cursantes: {grupo.empleados.length}</h5>
+                                                <h5>Curso: {nombre_curso['Nombre Curso']}</h5>
+                                                
+                                            </div>
+                                            
+                                            <div class="col" id='List-button'>
+                                                {/* Boton borrar */}
+                                                <div className="BButton">
+                                                    <div className="ActiText">
+                                                        <Button onClick ={() =>this.eliminar_grupo(grupo._id)} variant="contained" color='error' startIcon={<DeleteIcon />} id='BBorrar' >
+                                                            Borrar
+                                                        </Button>
+                                                    </div>
+                                                </div>
+                                                {/* Boton editar */}
+                                                <div className="EButton">
+                                                    <div className="ActiText">
+                                                        <Button variant="contained" startIcon={<EditIcon />} id='BEditar'>
+                                                            Editar
+                                                        </Button>
+                                                    </div>
+                                                </div>
+                                                {/* Boton start */}
+                                                <div className="SButton">
+                                                    <div className="ActiText">
+                                                        <Button variant="contained" startIcon={<PlayArrowIcon />} id='BStart'>
+                                                            Start
+                                                        </Button>
+                                                    </div>
+                                                </div> 
+                                                
+                                            </div>
+                                            <div className="AñadirEmpleado">  
+                                            <Divider style={{ background: 'black' }} variant="middle" />
                                             </div>
                                         </div>
-                                        {/* Boton start */}
-                                        <div className="SButton">
-                                            <div className="ActiText">
-                                                <Button variant="contained" startIcon={<PlayArrowIcon />} id='BStart'>
-                                                    Start
-                                                </Button>
-                                            </div>
-                                        </div> 
-                                    </div>
-                                </div>
-
-                                )
-                            })
-                    
-                        } 
-
-                    </Form>
-                </Container>
+                                        )
+                                    })
+                                } 
+                            </Form>
+                        </Container>
+                    </div>
                 </div>
-                </div>
+            </div>
+        </div>
           
         
     )

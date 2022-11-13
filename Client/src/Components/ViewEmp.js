@@ -6,16 +6,14 @@ function ViewEmp() {
     return (
         <div className="ViewBasic">
             <div className="ViewEmp">
-            <div className="Añadir"> 
-          <div className="AñadirEmpleado">  
-                    <br></br>
-                    
-                    <h5>Lista de Empleados</h5>
-                    <br></br>
-                    
+                <div className="Añadir"> 
+                    <div className="AñadirEmpleado">  
+                        <br></br>
+                        <br></br>
+                        <h5>Lista de Empleados</h5>
+                        <br></br>
                         <div className="scrollView"> 
-                             <div className="ViewBasicSelect">
-                    
+                            <div className="ViewBasicSelect">
                                 <Container>
                                     <Form id='List_Emp'>
                                         <hr></hr>
@@ -207,10 +205,10 @@ function ViewEmp() {
                                 </Container>
                             </div>
                         </div>
-                    
+                    </div>
                 </div>
-            </div>
-        </div> </div> 
+            </div> 
+        </div> 
     )
 }
 

@@ -192,6 +192,7 @@ class CrearGrupFile extends Component {
   render(){
   return (
         <div>
+          <br></br>
             <div className="ActiButton">
               <div className="ActiText">
                 <Box sx={{ '& > :not(style)': { m: 1 } }}>
@@ -238,7 +239,7 @@ class CrearGrupFile extends Component {
           <div className="AñadirEmpleado">  
             <h5>Seleccione a los empleados</h5>  
             <div className="AñadirList">  
-              <div className="scroll">          
+              <div className="scrolla">          
                 <Box sx={{ display: 'flex' }}>
                   <FormControl sx={{ m: 3 }} component="fieldset" variant="standard">
                   {/* ----------------- */}
@@ -277,7 +278,7 @@ class CrearGrupFile extends Component {
           <div className="EliminarEmpleado">
             <h5>Empleados que harán curso de "{this.state.nombre_curso}"</h5>
             <div className="EliminarList"> 
-              <div className="scroll">              
+              <div className="scrolla">              
                 <Box sx={{ display: 'flex' }}>
                   <Form>
                     <div className="scroll">{
