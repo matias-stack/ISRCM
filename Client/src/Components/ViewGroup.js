@@ -45,7 +45,7 @@ class  ViewGroup extends Component{
     render(){
     return (
         
-        <div className="Basic">
+       
             <div className='ViewGroup'>
                 <div className="Añadir"> 
                     <div className="AñadirEmpleado">  
@@ -96,7 +96,7 @@ class  ViewGroup extends Component{
                                             </div>
                                             <div className="AñadirEmpleado">  
                                             <Divider style={{ background: 'black' }} variant="middle" />
-                                            </div>
+                                            </div>  
                                         </div>
                                         )
                                     })
@@ -106,7 +106,7 @@ class  ViewGroup extends Component{
                     </div>
                 </div>
             </div>
-        </div>
+        
           
         
     )

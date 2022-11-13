@@ -122,13 +122,9 @@ class CrearGrupFile extends Component {
           a.push(e)
         }
         return a},[])
-
-
     })
-
-
    }
-   
+ 
 
     Obtenercurso(e){
         var {value} = e.target;

@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap';
 
 function ViewEmp() {
     return (
-        <div className="ViewBasic">
+        
             <div className="ViewEmp">
                 <div className="Añadir"> 
                     <div className="AñadirEmpleado">  
@@ -208,7 +208,7 @@ function ViewEmp() {
                     </div>
                 </div>
             </div> 
-        </div> 
+       
     )
 }
 

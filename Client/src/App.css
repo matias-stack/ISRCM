@@ -102,7 +102,6 @@ body{
   display: flex;
   justify-content: center;
   align-items: center; 
-  
 }
 
 .BasicSelect{
@@ -301,6 +300,38 @@ body{
 #BStart{
   background-color: green;
 }
+/* Monitoring*/
+
+
+.Monitoring {
+  height: 45vw;
+  width: 950px;
+  border-radius: 10px ;
+  display: block;
+  background-color: #01C681;
+  position: static;
+  margin: 20px auto;
+}
+
+
+#Mon_Cur{
+  width: 100%;
+  vertical-align: text-top;
+  background-color: #D9D9D9;
+  
+}
+
+#Cur_sec{
+  display: flex;
+  justify-content: auto;
+  align-items:center;
+  justify-content: space-around; 
+}
+
+#bar{
+  height: 45px;
+  width: 400px;
+}
 
 /* ver
 .ViewBasic{
@@ -330,6 +361,12 @@ body{
   overflow-y: scroll;
   overflow-x: hidden;
   border: 3px solid  black;
+}
+
+.CountCurso{
+  background-color: #D9D9D9;
+  border: 3px solid  black;
+  width: 80%;  
 }
 
 */
